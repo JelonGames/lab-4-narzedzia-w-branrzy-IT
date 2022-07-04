@@ -27,9 +27,10 @@ Logs () {
 }
 
 Help (){
-	echo --logs towrzy 100 logów
-	echo --logs "<wartość>" tworzy x logów
-	echo --date wyświetla date
+	echo --logs -l towrzy 100 logów
+	echo --logs -l "<wartość>" tworzy x logów
+	echo --date -d wyświetla date
+	echo --branch -b wyśiwietla listę branch"'"ów
 }
 
 Init () {
