@@ -23,8 +23,15 @@ Logs () {
 	done
 }
 
+Help (){
+	echo --logs towrzy 100 logów
+	echo --logs "<wartość>" tworzy x logów
+	echo --date wyświetla date
+}
+
 case "$opt" in
 	"--date") Date_view;;
 	"--logs") Logs;;
+	"--help") Help;;
 	*) echo  nie znaleziono polecenia $opt
 esac
