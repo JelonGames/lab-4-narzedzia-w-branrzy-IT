@@ -1,6 +1,7 @@
 #!/bin/bash
 
 opt=$1
+value=$2
 
 Date_view () {
 	echo $(Date --date now)
@@ -8,6 +9,11 @@ Date_view () {
 
 Logs () {
 	temp=100
+
+	if [ ! -z ${value} ]; 
+	then
+		temp=$value
+	fi
 
 	for ((i = 1; i <= ${temp}; i++)); do
 		touch log$i.txt
