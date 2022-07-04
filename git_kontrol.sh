@@ -16,10 +16,13 @@ Logs () {
 	fi
 
 	for ((i = 1; i <= ${temp}; i++)); do
+		mkdir log$i
+		cd log$i
 		touch log$i.txt
 		echo log$i.txt > log$i.txt
 		echo $0 >> log$i.txt
 		echo $(Date --date now) >> log$i.txt
+		cd ..
 	done
 }
 
