@@ -30,8 +30,8 @@ Help (){
 }
 
 case "$opt" in
-	"--date") Date_view;;
-	"--logs") Logs;;
-	"--help") Help;;
+	"--date" | "-d") Date_view;;
+	"--logs" | "-l") Logs;;
+	"--help" | "-h") Help;;
 	*) echo  nie znaleziono polecenia $opt
 esac
