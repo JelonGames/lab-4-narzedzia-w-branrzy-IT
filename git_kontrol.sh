@@ -28,11 +28,11 @@ Logs () {
 
 Help (){
 	echo --logs -l towrzy 100 logów
-	echo --logs -l "<wartość>" tworzy x logów
+	echo --logs -l "<wartość>" tworzy x logów w katalogach
 	echo --date -d wyświetla date
 	echo --init -i klonuje repozytorium
 	echo --error -e Tworzy pliki error
-	echo --error -e "<wartość>"Tworzy x plików error
+	echo --error -e "<wartość>"Tworzy x plików error w katalogach
 }
 
 Init () {
